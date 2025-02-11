@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    
+    <div id="menu">
+        <button onclick="startGame('friend')">Play with Friend</button>
+        <button onclick="startGame('ai')">Play with AI</button>
+    </div>
+    
+    <div class="board" id="board" style="display: none;"></div>
+    <div class="winner" id="winner"></div>
+    <button onclick="resetGame()" id="restartButton" style="display: none;">Restart</button>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 | Apoorva Nayak</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

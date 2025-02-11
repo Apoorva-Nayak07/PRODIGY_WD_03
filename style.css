@@ -1,0 +1,94 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make sure the body takes full height of the viewport */
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu button, #restartButton {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  width: 200px; /* Adjust the width of the buttons */
+}
+
+#menu button:hover, #restartButton:hover {
+  background-color: #45a049; /* Darker Green */
+  transform: scale(1.1);
+}
+
+#menu button:active, #restartButton:active {
+  transform: scale(1.05);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  background-color: orange;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.cell:hover {
+  background-color: #ff6600;
+}
+
+.winner {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #FF6347; /* Tomoto color for winner text */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 30px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 1.2em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
